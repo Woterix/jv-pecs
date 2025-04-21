@@ -6,13 +6,17 @@ package core.mate.academy.model;
  */
 public class Bulldozer extends Machine {
     private String model;
+    private double bladeWidth;
+    private boolean isTracked;
 
     public Bulldozer() {
 
     }
 
-    public Bulldozer(String model) {
+    public Bulldozer(String model, double bladeWidth, boolean isTracked) {
         this.model = model;
+        this.bladeWidth = bladeWidth;
+        this.isTracked = isTracked;
     }
 
     @Override

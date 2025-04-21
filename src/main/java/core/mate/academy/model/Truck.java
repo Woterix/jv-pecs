@@ -6,12 +6,16 @@ package core.mate.academy.model;
  */
 public class Truck extends Machine {
     private String model;
+    private int maxLoadCapacity;
+    private boolean hasTrailer;
 
     public Truck() {
     }
 
-    public Truck(String model) {
+    public Truck(String model, int maxLoadCapacity, boolean hasTrailer) {
         this.model = model;
+        this.maxLoadCapacity = maxLoadCapacity;
+        this.hasTrailer = hasTrailer;
     }
 
     @Override

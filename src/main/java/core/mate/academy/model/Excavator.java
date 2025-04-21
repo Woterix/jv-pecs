@@ -6,12 +6,16 @@ package core.mate.academy.model;
  */
 public class Excavator extends Machine {
     private String model;
+    private double armLength;
+    private int bucketCapacity;
 
     public Excavator() {
     }
 
-    public Excavator(String model) {
+    public Excavator(String model, double armLength, int bucketCapacity) {
         this.model = model;
+        this.armLength = armLength;
+        this.bucketCapacity = bucketCapacity;
     }
 
     @Override
